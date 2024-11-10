@@ -1,3 +1,0 @@
-host = "https://192.168.2.2:5001/"  # 替换为您的 DSM 主机地址
-    username = "tnos"  # 替换为您的用户名
-    password = "Sph040627@"  # 替换为您的密码
