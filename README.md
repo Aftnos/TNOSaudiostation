@@ -154,4 +154,6 @@ python GUIOK.py
 
 如果您有任何问题或建议，请联系 [Aftnos](https://github.com/Aftnos)。
 
+## 其他信息
+![Star history chart]([https://api.star-history.com/svg?repos=theme-shoka-x/hexo-theme-shokaX&type=Date](https://api.star-history.com/svg?repos=Aftnos/TNOSaudiostation&type=Date))
 ---
