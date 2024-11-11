@@ -142,6 +142,10 @@ python GUIOK.py
 
 根据您的需求调整匹配阈值，以达到最佳的匹配效果。
 
+## 计划
+
+后续将更新自动下载没有的歌曲到群晖中（不设固定接口，网络获取，免责声明）
+
 ## 贡献
 
 欢迎通过提交 Issue 或 Pull Request 来贡献代码和改进建议。如果您在使用过程中遇到问题或有功能需求，请在 [GitHub Issues](https://github.com/Aftnos/TNOSaudiostation/issues) 中提出。
