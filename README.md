@@ -1,12 +1,6 @@
 # TNOS AudioStation Playlist Importer
 
-[![GitHub stars](https://img.shields.io/github/stars/Aftnos/TNOSaudiostation.svg?style=social&label=Star)](https://github.com/Aftnos/TNOSaudiostation/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Aftnos/TNOSaudiostation.svg?style=social&label=Fork)](https://github.com/Aftnos/TNOSaudiostation/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/Aftnos/TNOSaudiostation)](https://github.com/Aftnos/TNOSaudiostation/issues)
-[![GitHub license](https://img.shields.io/github/license/Aftnos/TNOSaudiostation)](https://github.com/Aftnos/TNOSaudiostation/blob/main/LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/Aftnos/TNOSaudiostation)](https://github.com/Aftnos/TNOSaudiostation/graphs/contributors)
-
-![Project Logo](assets/1.ico) <!-- 请确保在仓库的 `assets` 文件夹中放置 `logo.png` 或替换为实际图标路径 -->
+![TNOSaudiostation](https://socialify.git.ci/Aftnos/TNOSaudiostation/image?description=1&font=Jost&forks=1&issues=1&language=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F128480098&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark) <!-- 请确保在仓库的 `assets` 文件夹中放置 `logo.png` 或替换为实际图标路径 -->
 
 ## 📦项目简介
 
