@@ -60,6 +60,11 @@ class LoginWindow(ttk.Toplevel):
         self.status_text = ScrolledText(self, height=5, width=35, state='disabled')
         self.status_text.grid(column=0, row=5, columnspan=2, sticky='EW', **padding)
 
+        # Progress bar
+        self.progress = ttk.Progressbar(self, mode='indeterminate')
+        self.progress.grid(column=0, row=6, columnspan=2, sticky='EW', **padding)
+        self.progress.grid_remove()
+
     def login(self):
         host = self.host_var.get().strip()
         username = self.username_var.get().strip()
@@ -70,6 +75,8 @@ class LoginWindow(ttk.Toplevel):
             return
 
         self.login_button.configure(state='disabled')
+        self.progress.grid()
+        self.progress.start()
         self.log_status("开始登录群晖AudioStation...")
 
         def perform_login():
@@ -91,10 +98,14 @@ class LoginWindow(ttk.Toplevel):
     def show_login_failure(self, message):
         self.log_status(message)
         self.login_button.configure(state='normal')
+        self.progress.stop()
+        self.progress.grid_remove()
         messagebox.showerror("登录失败", message)
 
     def show_login_success(self):
         self.login_button.configure(state='normal')
+        self.progress.stop()
+        self.progress.grid_remove()
         messagebox.showinfo("登录成功", "成功登录进去了")
         self.destroy()
         self.app.create_main_window()
@@ -223,6 +234,11 @@ class Application:
         self.status_text = ScrolledText(self.import_frame, height=20, width=100, state='disabled')
         self.status_text.grid(column=0, row=7, columnspan=3, sticky='EW', **padding)
 
+        # Progress bar for import
+        self.import_progress = ttk.Progressbar(self.import_frame, mode='indeterminate')
+        self.import_progress.grid(column=0, row=8, columnspan=3, sticky='EW', **padding)
+        self.import_progress.grid_remove()
+
     def update_import_mode(self):
         mode = self.import_mode.get()
         if mode == 'link':
@@ -316,6 +332,8 @@ class Application:
             return
 
         self.import_button.configure(state='disabled')
+        self.import_progress.grid()
+        self.import_progress.start()
 
         def perform_import():
             if import_mode == 'link':
@@ -352,6 +370,8 @@ class Application:
 
     def enable_import_widgets(self):
         self.import_button.configure(state='normal')
+        self.import_progress.stop()
+        self.import_progress.grid_remove()
 
     def log_status(self, message):
         def append_message():

@@ -68,7 +68,7 @@ TNOS AudioStation是一个专为 Synology AudioStation 设计的图形化GUI歌�
 在终端或命令提示符中运行以下命令启动工具：
 
 ```bash
-python GUIOK.py
+python main.py
 ```
 
 ### 2. 登录 Synology AudioStation
@@ -135,6 +135,18 @@ python GUIOK.py
 - **低阈值（如50-70）**：匹配更宽松，容许一定的差异，匹配更多的歌曲。
 
 根据您的需求调整匹配阈值，以达到最佳的匹配效果。
+
+## 打包为可执行文件
+
+安装完依赖后，可使用 [PyInstaller](https://www.pyinstaller.org/) 将程
+序打包为单文件可执行程序：
+
+```bash
+pyinstaller --noconfirm --onefile --windowed main.py
+```
+
+在 `dist/` 目录下即可得到生成的可执行文件。Windows 用户需在
+Windows 环境中执行上述命令以生成 `.exe` 文件。
 
 ## 计划
 
